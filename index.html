@@ -10,7 +10,7 @@
     <style>
         header{ background-color: #f2f2f2; }
         header ul li { height: 50px; line-height: 50px; text-align: center; display: none; color: #323237; position: relative;font-size: 18px;  }
-        header ul li.active{ display: block; }
+        header ul li.active{ display: block;background-color: #ff0000;color: white;}
         #footer{  background-color: #f2f2f2; }
         #footer ul li{  padding-top: 36px; padding-bottom: 4px; background: url() no-repeat center 2px; background-size: auto 30px; text-align: center; }
         #footer ul li.active{ color: #6ab494; }
@@ -31,10 +31,10 @@
 <div id="wrap" class="flex-wrap flex-vertical">
     <header>
         <ul>
-            <li class="border-b active" >云API</li>
-            <li class="border-b" >端API</li>
-            <li class="border-b" >开发</li>
-            <li class="border-b" >文档</li>
+            <li class="border-b active" >设备中心</li>
+            <li class="border-b" >用户查询</li>
+            <li class="border-b" >故障报修</li>
+            <li class="border-b" >我的信息</li>
         </ul>
     </header>
     <div id="main" class="flex-con">
@@ -42,10 +42,10 @@
     </div>
     <div id="footer" class="border-t">
         <ul class="flex-wrap" >
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con active" >云API</li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >端API</li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >开发</li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >文档</li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con active" >设备</li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >查询</li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >报修</li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >我的</li>
         </ul>
     </div>
 </div>
