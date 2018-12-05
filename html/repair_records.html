@@ -66,36 +66,33 @@
                 + '<span>'
                 + phone_list[i]
                 + '</span>'
-                + "房间号："
+                + " 房间号："
                 + '<span>'
                 + room_id_list[i]
                 + '</span>'
-                + "问题类别："
+                + " 问题类别："
                 + '<span>'
                 + problem_class_list[i]
                 + '</span>'
-                + "预约时间："
+                + " 预约时间："
                 + '<span>'
                 + repair_time_list[i]
                 + '</span>'
+                + '</br>'
                 + '<div class="aui-btn aui-btn-success " onclick="begin_repair(this)" >'
                 + "开始维修"
                 + '</div>'
-                + '<div class="aui-btn aui-btn-success " onclick="finish_repair(this)" >'
+                + '<div class="aui-btn aui-btn-success aui-pull-right" onclick="finish_repair(this)" >'
                 + "维修完成"
                 + '</div>'
                 + '</li>';
 
             }
-
             $api.setStorage('phone_list', 'phone_list');
             $api.setStorage('problem_class_list', 'problem_class_list');
 
-
             var el = $api.byId('repairList');
   					$api.html(el, myHtml);
-
-
         } else {
             alert( '获取报修记录失败。' );
           }
