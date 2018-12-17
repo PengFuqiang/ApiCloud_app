@@ -103,6 +103,7 @@
     var index = $api.attr(obj, 'data-index');
     var phone_list = $api.getStorage('phone_list');
     var problem_class_list = $api.getStorage('problem_class_list');
+    var worker = $api.getStorage('username');
 
     var phone = phone_list[index];
     var problem_class = problem_class_list[index];
@@ -112,7 +113,8 @@
         data: {
             values: {
                 phone: 'phone',
-                problem_class: 'problem_class'
+                problem_class: 'problem_class',
+                worker: 'username'
             }
         }
     },function(ret, err){
@@ -130,6 +132,7 @@
     var index = $api.attr(obj, 'data-index');
     var phone_list = $api.getStorage('phone_list');
     var problem_class_list = $api.getStorage('problem_class_list');
+    var worker = $api.getStorage('username');
 
     var phone = phone_list[index];
     var problem_class = problem_class_list[index];
@@ -139,7 +142,8 @@
         data: {
             values: {
                 phone: 'phone',
-                problem_class: 'problem_class'
+                problem_class: 'problem_class',
+                worker: 'worker'
             }
         }
     },function(ret, err){
